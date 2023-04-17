@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!--font-link-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet">
+   <!-- Style CSS -->
+   <link href="http://localhost:5000/assets/style.css" rel="stylesheet" />
+   <title>Generate Statement</title>
+   <style>
+      @media print {
+         @page {
+            margin-bottom: 0.5rem;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="page container">
+      <div class="row">
+         <div class="col-4 logo">
+            <img src="http://localhost:5000/assets/logo.png" alt="logo" />
+         </div>
+      </div>
+
+      <div class="row mt-1">
+         <div class="col-4 address">
+            <p>1792 Woodstock Rd STE 100</p>
+            <p>Roswell, GA 30075</p>
+            <p>(404) 585-7355</p>
+         </div>
+      </div>
+
+      <div class="row mt-4">
+         <div class="col-6 title">
+            <h4>Statement</h4>
+         </div>
+
+         <div class="col-6 date">
+            <p>Date: 01/09/2023</p>
+            <p>For Period: 12/05/2022-01/26/2023</p>
+         </div>
+      </div>
+
+      <div class="row mt-4 top-information">
+         <div class="information-1">
+            <h4>Statement of Debit and Credits for</h4>
+            <p>Cary Bumenfeld</p>
+         </div>
+      
+         <div class="information-2">
+            <h4>Please make payable to</h4>
+            <p>Method</p>
+         </div>
+
+         <div class="information-3">
+            <p><b>Total Balance:</b> $1076.00</p>
+            <p><b>Total Marketing Balance:</b> $2324.00</p>
+         </div>
+      </div>
+
+      <div class="row mt-4 table">
+         <div class="col-12">
+            <table>
+               <tr>
+                  <th style="width: 12%">Date</th>
+                  <th style="width: 23%">Description</th>
+                  <th style="width: 10%">Debit</th>
+                  <th style="width: 10%">Credit</th>
+                  <th style="width: 10%">Balance</th>
+                  <th style="width: 10%">Marketing Debit</th>
+                  <th style="width: 10%">Marketing Credit</th>
+                  <th style="width: 10%">Marketing Balance</th>
+               </tr>
+               <% for(let da of data) { %>
+                  <tr>
+                     <td><%= da.date %>3</td>
+                     <td><b>Miscellaneous:</b> Client Gifts and Party. 'Client Gifts and Party Favors. This is test description. Testing again.'
+                        Favors</td>
+                     <td>-$87.00</td>
+                     <td></td>
+                     <td>-$87.00</td>
+                     <td></td>
+                     <td></td>
+                     <td>$0.00</td>
+                  </tr>
+               <% } %>
+            </table>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
