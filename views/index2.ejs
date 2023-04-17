@@ -11,18 +11,12 @@
    <!-- Style CSS -->
    <link href="http://localhost:5000/assets/style.css" rel="stylesheet" />
    <title>Generate Statement</title>
-   <style>
-      @media print {
-         .page {
-            break-inside: avoid;
-         }
-      }
-   </style>
 </head>
 
 <body>
    <div class="page container">
-      <div class="row mt-4 table">
+      <div class="pageNumber" style="top: 30px;"><%= pageNumber %></div>
+      <div class="row mt-2 table">
          <div class="col-12">
             <table>
                <tr>

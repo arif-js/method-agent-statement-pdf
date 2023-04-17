@@ -15,7 +15,7 @@
    <style>
       @media print {
          @page {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
          }
       }
    </style>
@@ -23,6 +23,7 @@
 
 <body>
    <div class="page container">
+      <div class="pageNumber"><%= pageNumber %></div>
       <div class="row">
          <div class="col-4 logo">
             <img src="http://localhost:5000/assets/logo.png" alt="logo" />
@@ -44,7 +45,7 @@
 
          <div class="col-6 date">
             <p>Date: 01/09/2023</p>
-            <p>For Period: 12/05/2022-01/26/2023</p>
+            <p>For Period: 12/05/2022 - 01/26/2023</p>
          </div>
       </div>
 
@@ -60,8 +61,8 @@
          </div>
 
          <div class="information-3">
-            <p><b>Total Balance:</b> $1076.00</p>
-            <p><b>Total Marketing Balance:</b> $2324.00</p>
+            <p style="font-size: <%= totalBalance.length > 8 ? `12px !important` : `14px !important` %>"><b>Total Balance:</b> <%= totalBalance %> </p>
+            <p style="font-size: <%= marketingBalance.length > 8 ? `12px !important` : `14px !important` %>"><b>Total Marketing Balance:</b><%= marketingBalance %></p>
          </div>
       </div>
 
@@ -83,11 +84,11 @@
                      <td><%= da.date %>3</td>
                      <td><b>Miscellaneous:</b> Client Gifts and Party. 'Client Gifts and Party Favors. This is test description. Testing again.'
                         Favors</td>
+                     <td class="debit">-$87.00</td>
+                     <td class="credit">$56</td>
                      <td>-$87.00</td>
-                     <td></td>
-                     <td>-$87.00</td>
-                     <td></td>
-                     <td></td>
+                     <td class="debit">-$66</td>
+                     <td class="credit">$54</td>
                      <td>$0.00</td>
                   </tr>
                <% } %>
