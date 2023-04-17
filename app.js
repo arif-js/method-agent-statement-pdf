@@ -758,7 +758,7 @@ app.get("", async (req, res) => {
 
   let n = data.length;// number of items in the array
   let itemsPerPage = 10; // number of items to display on the first page
-  let remainingItemsPerPage = 23; // number of items to display on the rest of the pages
+  let remainingItemsPerPage = 20; // number of items to display on the rest of the pages
   let pageCount = Math.ceil((n - itemsPerPage) / remainingItemsPerPage) + 1; // total number of pages
 
   for (let i = 0; i < pageCount; i++) {
