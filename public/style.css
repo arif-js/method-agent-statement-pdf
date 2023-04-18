@@ -290,6 +290,7 @@ img {
    justify-content: space-between;
    padding-right: 15px;
    padding-left: 15px;
+   font-size: 14px;
 }
 
 .information-1 {
@@ -327,6 +328,7 @@ img {
    font-weight: 600;
    font-size: 13.5px;
    text-align: left;
+   padding-bottom: 2px;
 }
 
 .table td {

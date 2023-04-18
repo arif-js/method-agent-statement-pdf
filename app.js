@@ -6,11 +6,11 @@ const ejs = require("ejs");
 const { default: puppeteer } = require("puppeteer");
 const { PDFDocument } = require("pdf-lib");
 
-const lastPageFooterTemplate = '<div style="display: flex; flex-wrap: wrap; margin-right: 30px; margin-left: 30px; margin-bottom: 15px">\
+const lastPageFooterTemplate = '<div style="display: flex; flex-wrap: wrap; margin-right: 30px; margin-left: 30px; margin-bottom: 12px">\
         <div style="flex: 0 0 100%; max-width: 100%">\
-          <h4 style="font-size: 10px; font-family: \'Nunito\', sans-serif; margin: 0!important; padding: 0!important; margin-bottom: 4px!important">Payment Options:</h4>\
-          <p style="font-size: 10px; font-family: \'Nunito\', sans-serif; margin: 0!important; padding: 0!important">\
-              Payments can be made via a check delivered to the Roswell office, or electronically via Zelle. Please make all checks\
+          <h4 style="font-size: 8.5px; font-family: \'Nunito\', sans-serif; margin: 0!important; padding: 0!important; margin-bottom: 3px!important">Payment Options:</h4>\
+          <p style="font-size: 8.5px; font-family: \'Nunito\', sans-serif; margin: 0!important; padding: 0!important; line-height: 1.4; text-align: justify;">\
+              Payments can be made via a check <b>delivered to the Roswell office</b>, or <b>electronically via Zelle</b>. Please make all checks\
               payable to “Method” and include the words “Tab Payment” in the memo. When sending Zelle payments, please send to our\
               phone number at 770-329-9484. Please include your First name, Last name and the words “Tab Payment” in your payment\
               description.\
@@ -767,7 +767,7 @@ app.get("", async (req, res) => {
     // display the jth item on the current page
     if (i === 0) {
       // first page
-      let html = await ejs.renderFile("views/index.ejs", { data: data.slice(start, end), totalBalance: "$5675.00", marketingBalance: "$456.00", pageNumber: i+1 }, { async: true });
+      let html = await ejs.renderFile("views/index.ejs", { data: data.slice(start, end), totalBalance: "$5675.00", marketingBalance: "$456.00", pageNumber: i+1, pageCount }, { async: true });
       let page1 = await createPDF(html, {
         height: "11.00in",
         width: "8.50in",
@@ -779,7 +779,7 @@ app.get("", async (req, res) => {
       const [firstPage] = await pdfDoc.copyPages(page1Doc, [0])
       pdfDoc.addPage(firstPage)
     } else {
-      let html = await ejs.renderFile("views/index2.ejs", { data: data.slice(start, end), pageNumber: i+1 }, { async: true });
+      let html = await ejs.renderFile("views/index2.ejs", { data: data.slice(start, end), pageNumber: i+1, pageCount }, { async: true });
       let page2 = await createPDF(html, {
         height: "11.00in",
         width: "8.50in",
