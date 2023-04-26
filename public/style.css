@@ -243,7 +243,6 @@ img {
    right: 30px;
    top: 0;
    font-size: 13px;
-   font-weight: 600;
 }
 
 .debit {
@@ -283,6 +282,7 @@ img {
    flex-direction: column;
    gap: 2px;
    text-align: right;
+   font-size: 14.4px;
 }
 
 .top-information {
@@ -294,7 +294,7 @@ img {
 }
 
 .information-1 {
-   width: 265px;
+   width: 241px;
    display: flex;
    flex-direction: column;
    gap: 2px;
