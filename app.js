@@ -60,6 +60,96 @@ const data = [
     marketingCredit: "",
     marketingBalance: "$0.00"
   },
+    {
+    date: "05/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+    {
+    date: "05/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+    {
+    date: "05/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
+  {
+    date: "01/12/2023",
+    description: 'Client Gifts and Party Favors',
+    debit: "-$87.00",
+    credit: "",
+    balance: "$87.00",
+    marketingDebit: "",
+    marketingCredit: "",
+    marketingBalance: "$0.00"
+  },
 ];
 
 // Navigation

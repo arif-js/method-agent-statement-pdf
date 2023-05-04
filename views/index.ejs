@@ -61,8 +61,8 @@
          </div>
 
          <div class="information-3">
-            <p style="font-size: <%= totalBalance.length > 8 ? `12px !important` : `14px !important` %>"><b>Total Balance:</b> <%= totalBalance %> </p>
-            <p style="font-size: <%= marketingBalance.length > 8 ? `12px !important` : `14px !important` %>"><b>Total Marketing Balance:</b> <%= marketingBalance %></p>
+            <p style="font-size: <%= totalBalance.length > 8 ? `12px !important` : `14px !important` %>"><b style="letter-spacing: 0.5px;">Total Balance:</b> <%= totalBalance %> </p>
+            <p style="font-size: <%= marketingBalance.length > 7 ? `12px !important` : `14px !important` %>"><b style="letter-spacing: 0.5px;">Total Marketing Balance:</b> <%= marketingBalance %></p>
          </div>
       </div>
 
@@ -82,7 +82,7 @@
                <% for(let da of data) { %>
                   <tr>
                      <td><%= da.date %>3</td>
-                     <td><b>Miscellaneous:</b> Client Gifts and Party. 'Client Gifts and Party Favors. This is test description. Testing again.'
+                     <td><b style="letter-spacing: 0.9px;">Miscellaneous:</b> Client Gifts and Party. 'Client Gifts and Party Favors. This is test description. Testing again.'
                         Favors</td>
                      <td class="debit">-$87.00</td>
                      <td class="credit">$56</td>
